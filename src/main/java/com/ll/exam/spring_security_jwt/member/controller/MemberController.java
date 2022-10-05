@@ -8,11 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+
 @RestController
 public class MemberController {
 
     @RequestMapping("/member/login")
-    public String login(@RequestBody LoginDto loginDto){
+    public String login(@RequestBody LoginDto loginDto, HttpServletResponse response){
+
+        response.addHeader("Authentication","myToken");
+
         return "username : %s, password : %s".formatted(loginDto.getUsername(), loginDto.getPassword());
     }
 }
