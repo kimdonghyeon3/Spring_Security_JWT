@@ -4,6 +4,7 @@ package com.ll.exam.spring_security_jwt.member.controller;
 import com.ll.exam.spring_security_jwt.member.dto.LoginDto;
 import com.ll.exam.spring_security_jwt.member.entity.Member;
 import com.ll.exam.spring_security_jwt.member.service.MemberService;
+import com.ll.exam.spring_security_jwt.util.Util;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -40,12 +41,10 @@ public class MemberController {
             return new ResponseEntity<>(null, null, HttpStatus.BAD_REQUEST);
         }
 
-        response.addHeader("Authentication","myToken");
-
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authentication", "token");
-        String body = "username : %s, password : %s".formatted(loginDto.getUsername(), loginDto.getPassword());
+        headers.set("Authentication", "JWT-Token");
 
-        return new ResponseEntity<>(body, headers, HttpStatus.OK);
+
+        return Util.spring.responseEntityOf(headers);
     }
 }
