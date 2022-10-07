@@ -3,6 +3,7 @@ package com.ll.exam.spring_security_jwt.app.article.service;
 import com.ll.exam.spring_security_jwt.app.article.entity.Article;
 import com.ll.exam.spring_security_jwt.app.article.repository.ArticleRepository;
 import com.ll.exam.spring_security_jwt.app.member.entity.Member;
+import com.ll.exam.spring_security_jwt.app.security.entity.MemberContext;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -34,5 +35,13 @@ public class ArticleService {
 
     public Optional<Article> findById(Long id) {
         return articleRepository.findById(id);
+    }
+
+    public void delete(Article article) {
+        articleRepository.delete(article);
+    }
+
+    public boolean actorCanDelete(MemberContext memberContext, Article article) {
+        return memberContext.getId() == article.getAuthor().getId();
     }
 }
