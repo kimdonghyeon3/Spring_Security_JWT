@@ -1,5 +1,6 @@
 package com.ll.exam.spring_security_jwt.app.article.service;
 
+import com.ll.exam.spring_security_jwt.app.article.dto.request.ArticleModifyDto;
 import com.ll.exam.spring_security_jwt.app.article.entity.Article;
 import com.ll.exam.spring_security_jwt.app.article.repository.ArticleRepository;
 import com.ll.exam.spring_security_jwt.app.member.entity.Member;
@@ -7,7 +8,6 @@ import com.ll.exam.spring_security_jwt.app.security.entity.MemberContext;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -43,5 +43,15 @@ public class ArticleService {
 
     public boolean actorCanDelete(MemberContext memberContext, Article article) {
         return memberContext.getId() == article.getAuthor().getId();
+    }
+
+    public void modify(Article article, ArticleModifyDto articleModifyDto) {
+        article.setSubject(articleModifyDto.getSubject());
+        article.setContent(articleModifyDto.getContent());
+        articleRepository.save(article);
+    }
+
+    public boolean actorCanModify(MemberContext memberContext, Article article) {
+        return actorCanDelete(memberContext, article);
     }
 }
