@@ -1,4 +1,4 @@
-package com.ll.exam.spring_security_jwt.jwt;
+package com.ll.exam.spring_security_jwt.security.jwt;
 
 import com.ll.exam.spring_security_jwt.util.Util;
 import io.jsonwebtoken.Jwts;

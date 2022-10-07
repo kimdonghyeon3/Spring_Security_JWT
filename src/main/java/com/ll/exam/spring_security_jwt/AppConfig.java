@@ -1,4 +1,4 @@
-package com.ll.exam.spring_security_jwt.base;
+package com.ll.exam.spring_security_jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;

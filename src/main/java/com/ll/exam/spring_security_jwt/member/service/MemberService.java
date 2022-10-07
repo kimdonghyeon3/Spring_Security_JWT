@@ -1,6 +1,6 @@
 package com.ll.exam.spring_security_jwt.member.service;
 
-import com.ll.exam.spring_security_jwt.jwt.JwtProvider;
+import com.ll.exam.spring_security_jwt.security.jwt.JwtProvider;
 import com.ll.exam.spring_security_jwt.member.entity.Member;
 import com.ll.exam.spring_security_jwt.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;

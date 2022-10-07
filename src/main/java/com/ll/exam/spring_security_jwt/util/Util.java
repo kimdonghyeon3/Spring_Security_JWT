@@ -2,7 +2,7 @@ package com.ll.exam.spring_security_jwt.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ll.exam.spring_security_jwt.base.AppConfig;
+import com.ll.exam.spring_security_jwt.AppConfig;
 import com.ll.exam.spring_security_jwt.base.RsData;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
