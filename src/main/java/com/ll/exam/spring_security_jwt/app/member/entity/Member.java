@@ -1,7 +1,7 @@
-package com.ll.exam.spring_security_jwt.member.entity;
+package com.ll.exam.spring_security_jwt.app.member.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.ll.exam.spring_security_jwt.base.entity.BaseEntity;
+import com.ll.exam.spring_security_jwt.app.base.entity.BaseEntity;
 import com.ll.exam.spring_security_jwt.util.Util;
 import lombok.*;
 import lombok.experimental.SuperBuilder;

@@ -1,4 +1,4 @@
-package com.ll.exam.spring_security_jwt.security.jwt;
+package com.ll.exam.spring_security_jwt.app.security.jwt;
 
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;

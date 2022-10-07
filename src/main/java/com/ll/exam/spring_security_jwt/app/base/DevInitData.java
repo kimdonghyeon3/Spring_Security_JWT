@@ -1,7 +1,7 @@
-package com.ll.exam.spring_security_jwt.base;
+package com.ll.exam.spring_security_jwt.app.base;
 
-import com.ll.exam.spring_security_jwt.member.entity.Member;
-import com.ll.exam.spring_security_jwt.member.service.MemberService;
+import com.ll.exam.spring_security_jwt.app.member.entity.Member;
+import com.ll.exam.spring_security_jwt.app.member.service.MemberService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

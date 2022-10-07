@@ -1,4 +1,4 @@
-package com.ll.exam.spring_security_jwt.base.entity;
+package com.ll.exam.spring_security_jwt.app.base.entity;
 
 import lombok.Builder;
 import lombok.Getter;

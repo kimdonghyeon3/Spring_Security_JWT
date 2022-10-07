@@ -1,4 +1,4 @@
-package com.ll.exam.spring_security_jwt.member.dto;
+package com.ll.exam.spring_security_jwt.app.member.dto;
 
 import lombok.Data;
 

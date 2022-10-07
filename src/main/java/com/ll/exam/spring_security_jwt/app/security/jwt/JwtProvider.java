@@ -1,10 +1,11 @@
-package com.ll.exam.spring_security_jwt.security.jwt;
+package com.ll.exam.spring_security_jwt.app.security.jwt;
 
 import com.ll.exam.spring_security_jwt.util.Util;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+
 import javax.crypto.SecretKey;
 import java.util.Date;
 import java.util.Map;

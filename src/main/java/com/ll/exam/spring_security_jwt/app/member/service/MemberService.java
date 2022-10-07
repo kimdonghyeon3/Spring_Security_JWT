@@ -1,8 +1,8 @@
-package com.ll.exam.spring_security_jwt.member.service;
+package com.ll.exam.spring_security_jwt.app.member.service;
 
-import com.ll.exam.spring_security_jwt.security.jwt.JwtProvider;
-import com.ll.exam.spring_security_jwt.member.entity.Member;
-import com.ll.exam.spring_security_jwt.member.repository.MemberRepository;
+import com.ll.exam.spring_security_jwt.app.security.jwt.JwtProvider;
+import com.ll.exam.spring_security_jwt.app.member.entity.Member;
+import com.ll.exam.spring_security_jwt.app.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
